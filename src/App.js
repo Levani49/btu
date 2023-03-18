@@ -5,13 +5,13 @@ import UserPage from "./UserPage";
 import Error from "./Error";
 
 export default function App() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Main />} />
-                <Route path="/user/:id" element={<UserPage />} />
-                <Route path="*" exact={true} element={<Error />} />
-            </Routes>
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/* <Route path="/" element={<Main />} />
+                <Route path="/user/:id" element={<UserPage />} /> */}
+        <Route path="*" exact={true} element={<Error />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
